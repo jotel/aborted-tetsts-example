@@ -1,0 +1,21 @@
+plugins {
+    id 'scala'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.11.12'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testImplementation 'org.scalatest:scalatest_2.11:3.1.1'
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.0'
+    testRuntimeOnly 'co.helmethair:scalatest-junit-runner:0.1.3'
+}
+
+test {
+    useJUnitPlatform()
+}
